@@ -1,0 +1,29 @@
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+input {
+    height: 2rem;
+    width: 300px;
+    margin-bottom: 1rem;
+    padding: 0 10px;
+}
+
+button {
+    display: block;
+    height: 2.5rem;
+    width: 325px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(233, 233, 233);
+}
+
+button:active {
+    background-color: rgb(208, 208, 208);
+}

@@ -1,10 +1,11 @@
 import React from 'react';
+import { useAuth } from '../components/loginAuth';
 
-export const Home = () =>{
-
-    return(
+export const Home = () => {
+    const auth = useAuth();
+    return (
         <div id="home-page">
-            Home page
+            <button id='logout-btn' onClick={() => auth.logout()}>Logout</button>
         </div>
     )
 }

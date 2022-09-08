@@ -4,11 +4,12 @@ import { Routes, Route } from 'react-router'
 import { Signin } from './pages/Signin'
 import { Home } from './pages/Home'
 import { Signup } from './pages/Signup'
+import RequireAuth from './components/requireAuth'
 export const AppRoutes = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path='/home' element={<Home />} />
+                <Route path='/home' element={<RequireAuth><Home /></RequireAuth>} />
                 <Route path='/signin' element={<Signin />} />
                 <Route path='/signup' element={<Signup />} />
             </Routes>
